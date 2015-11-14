@@ -6,13 +6,48 @@
     <h1>Welcome to Music Choosinator 3000!!!</h1>
     <p>Words wrods words words words.</p>
 
-    <form name="myform" action="index.html">
-      <fieldset class="account-action">
-        <input class="btn" type="submit" name="submit" value="Submit"><a href="javascript: submit()"></a>
-      </fieldset>
-
+    <form id="check" name="myform" action="index.html">
+        <!--This is where the checklist goes-->
     </form>
-
+    <script>
+      var element = document.getElementById("check");
+      var brk = document.createElement("br");
+      //adds checkboxes
+      for (var i = 0; i < 10; i++) {
+        var listBox = document.createElement("input");
+        listBox.setAttribute("name","Artist " + i);
+        listBox.setAttribute("type", "checkbox");
+        listBox.setAttribute("value", "Artist "+ i);
+        listBox.setAttribute("class", "boxes");
+        
+        var listItem = document.createElement("p");
+        listItem.setAttribute("class","items");
+        
+        var node = document.createTextNode("Artist " + i);
+        listItem.appendChild(node);
+        listItem.style.display = "inline";
+        listItem.style.paddingRight = "";
+        
+        var brk = document.createElement("br");
+        
+        element.appendChild(listBox);
+        element.appendChild(listItem);
+        element.appendChild(brk);
+        
+      }
+        
+        
+        //adds button
+        var button = document.createElement("a");
+        button.setAttribute("href","./submitted.html");
+        
+        var node = document.createTextNode("Submit");
+        button.appendChild(node);
+      
+        button.style.display = "block";
+        
+        element.appendChild(button);
+</script>
 
   </body>
 </html>
