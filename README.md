@@ -1,2 +1,2 @@
-# ChooseMusic3000
-Messing with Spotify APIs
+# MEANStructure
+template for creating a web app with a MEAN stack
