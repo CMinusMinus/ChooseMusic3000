@@ -9,9 +9,9 @@
     <form id="check" name="myform" action="index.html">
         <!--This is where the checklist goes-->
     </form>
+    
     <script>
       var element = document.getElementById("check");
-      var brk = document.createElement("br");
       //adds checkboxes
       for (var i = 0; i < 10; i++) {
         var listBox = document.createElement("input");
@@ -26,16 +26,13 @@
         var node = document.createTextNode("Artist " + i);
         listItem.appendChild(node);
         listItem.style.display = "inline";
-        listItem.style.paddingRight = "";
         
         var brk = document.createElement("br");
         
         element.appendChild(listBox);
         element.appendChild(listItem);
         element.appendChild(brk);
-        
       }
-        
         
         //adds button
         var button = document.createElement("a");
@@ -47,7 +44,7 @@
         button.style.display = "block";
         
         element.appendChild(button);
-</script>
+    </script>
 
   </body>
 </html>
