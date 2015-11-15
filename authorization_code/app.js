@@ -1,4 +1,4 @@
-
+/*
 var express = require('express'); // Express web server framework
 var request = require('request'); // "Request" library
 var querystring = require('querystring');
@@ -13,6 +13,7 @@ var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
  * @param  {number} length The length of the string
  * @return {string} The generated string
  */
+/*
 var generateRandomString = function(length) {
   var text = '';
   var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -135,3 +136,4 @@ app.get('/refresh_token', function(req, res) {
 
 console.log('Listening on 8888');
 app.listen(8888);
+*/

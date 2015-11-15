@@ -6,12 +6,16 @@
     <h1>Welcome to Music Choosinator 3000!!!</h1>
     <p>Words wrods words words words.</p>
 
-    <form id="check" name="myform" action="index.html">
+    <form name="myform" action="index.html" method="get">
+        <fieldset id="check">
         <!--This is where the checklist goes-->
+        </fieldset>
+        <input type= "submit" name="submit" value = "Submit"/>
     </form>
     
     <script>
       var element = document.getElementById("check");
+      element.style.border = "none";
       //adds checkboxes
       for (var i = 0; i < 10; i++) {
         var listBox = document.createElement("input");
@@ -33,17 +37,17 @@
         element.appendChild(listItem);
         element.appendChild(brk);
       }
-        
+        /*
         //adds button
-        var button = document.createElement("a");
-        button.setAttribute("href","./submitted.html");
-        
-        var node = document.createTextNode("Submit");
-        button.appendChild(node);
+        var button = document.createElement("input");
+        button.setAttribute("name", "Submit");
+        button.setAttribute("type", "submit");
+        button.setAtribute("value","submit");
       
         button.style.display = "block";
         
-        element.appendChild(button);
+        element.appendChild(button);*/
+      
     </script>
 
   </body>
